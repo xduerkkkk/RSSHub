@@ -39,6 +39,11 @@
         "vitest:fullroutes": "cross-env NODE_ENV=test FULL_ROUTES_TEST=true vitest --reporter=json --reporter=default --outputFile=\"./assets/build/test-full-routes.json\" routes",
         "vitest:watch": "cross-env NODE_ENV=test vitest --watch"
     },
+    "pnpm": {
+      "overrides": {
+        "nan": "^2.19.0"
+     }
+    },
     "lint-staged": {
         "*.js": [
             "prettier --ignore-unknown --ignore-path ./.gitignore --write",
